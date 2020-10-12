@@ -1,0 +1,100 @@
+@import "variables";
+
+
+/* -- defaults -- */
+body {
+    background-color: $dark-blue;
+    color: hsl(0, 0%, 100%);
+}
+
+/* -- navbar styling -- */
+
+nav.navbar {
+    padding-top: 3rem !important;
+
+    .navbar-brand {
+        img {
+            width: calc(9rem - 1rem + 1vw);
+        }
+    }
+
+    .navbar-toggler:active {
+        background-color: inherit;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 100%) !important;
+        padding-right: calc(3rem - 1rem + 1vw) !important;
+
+        &:hover {
+            text-decoration: none;
+            background-color: inherit;
+            color: $purple !important;
+        }
+    }
+
+    .btn-primary {
+        padding: 6px 20px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        border-radius: 9px;
+        background-color: $light-green;
+        color: $dark-blue;
+        white-space: nowrap;
+    }
+}
+
+/* navbar animations */
+@media (min-width: 992px) {
+    .dropdown-menu {
+      animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    animation-name: slideIn;
+    animation-name: slideIn;
+}
