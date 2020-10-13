@@ -9,7 +9,7 @@
 <body>
     {% include "../components/navBar.njk" %}
     <h1>{{ title }}</h1>
-    {{ content | safe }}
+    {{ text | safe }}
 </body>
 <script>
   if (window.netlifyIdentity) {

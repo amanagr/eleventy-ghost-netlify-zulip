@@ -1,5 +1,5 @@
 ---
 layout: layouts/base.njk
 title: A / B Testing
-content: Split test 002
+text: Split test 002
 ---
